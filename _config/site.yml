@@ -388,14 +388,48 @@ projects:
       Hibernate Tools makes working with Hibernate or JPA even more pleasant.
     blog_tag: JBoss Tools
     blog_tag_url: jboss-tools
+    github:
+      project: hibernate-tools
+    integrations:
+      java:
+        name: Java
+        url: https://www.oracle.com/technetwork/java/javase/downloads/index.html
+      orm:
+        name: Hibernate ORM
+        url: /orm/
+    jira:
+      key: HBX
     license:
       name: LGPL v2.1
       url: https://github.com/hibernate/hibernate-tools/blob/master/lgpl.txt
+    links:
+      reference_doc:
+        html: /tools/documentation/{series.version}/reference/html_single/
+        latest_stable:
+          html: /tools/documentation/{series.version}/reference/html_single/
+      javadoc:
+        html: /tools/documentation/{series.version}/javadocs/
+        latest_stable:
+          html: /tools/documentation/{series.version}/javadocs/
+      getting_started_guide:
+        html: /tools/documentation/{series.version}/reference/html_single/#getting-started
+      dist:
+    maven:
+      coord:
+        group_id: org.hibernate.tool
+        main_artifact_id: hibernate-tools
+      repo:
+        releases: central
+        snapshots: jboss
     menu:
       intern:
         - name: About
           href: '/tools/'
           css_class: 'home'
+        - name: Releases
+          href: '/tools/releases/'
+          css_class: 'tags'
+          releases_submenu: true
       extern:
         - name: Downloads
           href: 'https://tools.jboss.org/downloads/'

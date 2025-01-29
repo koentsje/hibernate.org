@@ -1,0 +1,4 @@
+= Releases
+:awestruct-layout: project-releases
+:awestruct-project: tools
+
