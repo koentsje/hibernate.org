@@ -1,0 +1,3 @@
+:awestruct-layout: project-releases-series
+:awestruct-project: tools
+:awestruct-series_version: "6.6"
