@@ -430,6 +430,9 @@ projects:
           href: '/tools/releases/'
           css_class: 'tags'
           releases_submenu: true
+        - name: Documentation
+          href: '/tools/documentation/'
+          css_class: 'book'
       extern:
         - name: Downloads
           href: 'https://tools.jboss.org/downloads/'

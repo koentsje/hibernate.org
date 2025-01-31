@@ -1,0 +1,24 @@
+---
+layout: project-documentation
+title: Documentation
+project: tools
+---
+
+- project = site.projects[page.project]
+-# Latest series available unless a stable release exists
+- series = project.latest_stable_series.nil? ? project.latest_series : project.latest_stable_series
+- getting_started_guides = getting_started_guides(project, series)
+
+:asciidoc
+  :version: #{series.version}
+  :build: https://hibernate.org/reactive/documentation/{version}/reference/html_single/#_including_hibernate_reactive_in_your_project_build
+  :config: https://hibernate.org/reactive/documentation/{version}/reference/html_single/#_basic_configuration
+  :model: https://hibernate.org/reactive/documentation/{version}/reference/html_single/#_mapping_entity_classes
+  :session: https://hibernate.org/reactive/documentation/{version}/reference/html_single/#_using_the_reactive_session
+  :performance: https://hibernate.org/reactive/documentation/{version}/reference/html_single/#_tuning_and_performance
+
+  == Getting started
+
+ <some getting started information should come here>
+
+
